@@ -79,7 +79,7 @@ header .navbar ul li a:hover::before{
 
 .home{
   min-height: 100vh;
-  background-image: url("images/bryan.png");
+  background-image: url("images/nyc.jpg");
   background-size: cover;
   background-position: center;
   float: left;
@@ -129,3 +129,6 @@ header .navbar ul li a:hover::before{
   0%{transform: translateX(100%);opacity: 0}
   100%{transform: translateX(0);opacity: 1}
 }
+
+/*About Section*/
+
