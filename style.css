@@ -353,7 +353,7 @@ h2.title::before{
   border-radius: 4px;
 }
 
-.skills .skills-content .card .progress .inner::before{
+.skills .skills-content .card .progress::before{
   content: attr(data-text);
   position: absolute;
   right: 0px;
@@ -362,3 +362,6 @@ h2.title::before{
   font-size: 14px;
   font-weight: 600;
 }
+
+/*Portfolio Section*/
+
