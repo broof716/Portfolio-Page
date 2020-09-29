@@ -365,3 +365,63 @@ h2.title::before{
 
 /*Portfolio Section*/
 
+.portfolio{
+  float: left;
+  width: 100%;
+  padding: 80px 0px;
+  background-color: #292929;
+}
+
+.portfolio .portfolio-content{
+  float: left;
+  width: 100%;
+}
+
+.portfolio .portfolio-content .card{
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.portfolio .portfolio-content .card .box{
+  background-color: #353535;
+  padding: 15px;
+  position: relative;
+}
+.portfolio .portfolio-content .card .box::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  height: 3px;
+  width: 0;
+  background-color: #f3971b;
+  z-index: 1;
+  transition: width .5s ease;
+}
+.portfolio .portfolio-content .card .box:hover::before{
+  width: 100%;
+}
+
+.portfolio .portfolio-content .card .box h3{
+  margin: 0;
+  padding: 15px 0 5px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+.portfolio .portfolio-content .card .box h4{
+  margin: 0;
+  padding: 5px 0px 25px;
+  color: #f3971b;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.portfolio .portfolio-content .card .box img{
+  width: 100%;
+  display: block;
+}
