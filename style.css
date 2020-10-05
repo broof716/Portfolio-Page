@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 /*font awesome icons*/
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -306,70 +308,13 @@ h2.title::before{
   font-weight: 400;
 }
 
-/*Skills Section*/
-
-.skills{
-  float: left;
-  width: 100%;
-  padding: 80px 0px;
-  background-color: #353535;
-}
-
-.skills .skills-content{
-  float: left;
-  width: 100%;
-}
-
-.skills .skills-content .card{
-  width: 50%;
-  float: left;
-  padding: 0px 15px;
-  margin-bottom: 50px;
-}
-
-.skills .skills-content .card label{
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 600;
-  display: block;
-  text-align: left;
-  margin: 10px o;
-}
-
-.skills .skills-content .card .progress{
-  height: 10px;
-  width: 100%;
-  border-radius: 4px;
-  background-color: #292929;
-  position: relative;
-  border: 4px solid #292929;
-}
-.skills .skills-content .card .progress .inner{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: #f3971b;
-  border-radius: 4px;
-}
-
-.skills .skills-content .card .progress::before{
-  content: attr(data-text);
-  position: absolute;
-  right: 0px;
-  top: -20px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-}
-
 /*Portfolio Section*/
 
 .portfolio{
   float: left;
   width: 100%;
   padding: 80px 0px;
-  background-color: #292929;
+  background-color: #353535;
 }
 
 .portfolio .portfolio-content{
@@ -384,7 +329,7 @@ h2.title::before{
 }
 
 .portfolio .portfolio-content .card .box{
-  background-color: #353535;
+  background-color: #292929;
   padding: 15px;
   position: relative;
 }
@@ -431,7 +376,7 @@ h2.title::before{
   float: left;
   width: 100%;
   padding: 80px 0px;
-  background-color: #353535;
+  background-color: #292929;
 }
 
 .team .team-content{
@@ -446,7 +391,7 @@ padding: 15px;
 }
 
 .team .team-content .card .box{
-  background-color: #292929;
+  background-color: #353535;
   position: relative;
 }
 .team .team-content .card .box::before{
@@ -495,7 +440,7 @@ padding: 15px;
   float: left;
   width: 100%;
   padding: 80px 0px;
-  background-color: #292929;
+  background-color:  #353535;
 }
 
 .contact .contact-content{
@@ -507,6 +452,7 @@ padding: 15px;
 .contact .contact-content textarea{
   height: 50px;
   border: none;
+  border-left: 2px solid transparent;
   padding: 10px 15px;
   color: #ffffff;
   margin-bottom: 30px;
@@ -515,5 +461,95 @@ padding: 15px;
   font-weight: 400;
   display: block;
   width: 100%;
-  background-color: #353535;
+  background-color: #292929;
+  transition: border .5s ease;
+}
+.contact .contact-content input:focus,
+.contact .contact-content textarea:focus{
+  border-color: #f3971b;
+}
+
+.contact .contact-content textarea{
+  height: 100px;
+}
+.contact .contact-content button{
+  display: block;
+  margin: auto;
+}
+
+/*Footer Section*/
+
+footer{
+  float: left;
+  width: 100%;
+  background-color: #292929;
+  padding: 50px 0px;
+}
+
+footer .footer-content{
+  float: left;
+  width: 100%;
+}
+footer .social-links{
+  float: left;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #353535;
+  padding-top: 15px;
+}
+footer .social-links ul{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+footer .social-links ul li{
+  display: inline;
+}
+footer .social-links ul li{
+  display: inline-block;
+  padding:15px 15px;
+}
+footer .social-links ul li a span{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #f3971b;
+  color: #f3971b;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  transition: all .5s ease;
+}
+footer .social-links ul li a span:hover{
+  background-color: #f3971b;
+  color: #ffffff;
+}
+footer .footer-content .box{
+  width: 50%;
+  float: left;
+  padding: 15px;
+  text-align: center;
+}
+footer .footer-content .box .icon span{
+  color: #f3971b;
+  font-size: 30px;
+}
+footer .footer-content .box h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 0 0px;
+}
+footer .footer-content .box p{
+  color: #c2c0c3;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: .5px;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px 0;
+  margin: 0px;
 }
