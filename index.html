@@ -217,5 +217,26 @@
     </div>
   </footer>
   <!-- End Footer -->
+
+  <!-- jQuery code -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+
+  <script>
+    $(document).ready(function(){
+      var bottom=$("header").outerHeight();
+      var header=$("header").offset().top + bottom;
+
+      $(window).scroll(function(){
+        if($(window).scrollTop()>=header){
+          $("header").addClass("sticky")
+        }
+        else{
+          $("header").removeClass("sticky")
+        }
+      })
+    })
+  </script>
+
 </body>
 </html>
