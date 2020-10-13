@@ -425,6 +425,14 @@ padding: 15px;
   font-weight: 600;
   letter-spacing: .5px;
 }
+.team .team-content .card .box h4 a{
+  margin: 0;
+  padding: 15px 0 5px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
 .team .team-content .card .box h3{
   margin: 0;
   padding: 15px 0 5px;
@@ -484,7 +492,7 @@ padding: 15px;
 	display: block;
 	margin:auto;
 }
-}
+
 
 /*Footer Section*/
 
@@ -553,6 +561,15 @@ footer .footer-content .box h4{
   padding: 20px 0 0px;
 }
 footer .footer-content .box p{
+  color: #c2c0c3;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: .5px;
+  font-weight: 400;
+  padding: 10px 0;
+  margin: 0px;
+}
+footer .footer-content .box p a{
   color: #c2c0c3;
   font-size: 16px;
   line-height: 25px;
