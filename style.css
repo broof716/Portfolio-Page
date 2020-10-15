@@ -494,6 +494,14 @@ padding: 15px;
   font-weight: 400;
   letter-spacing: .5px;
 }
+.team .team-content .card .box h3 a{ 
+  margin: 0;
+  padding: 15px 0 5px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
 .team .team-content .card .box h2{
   margin: 0;
   padding: 5px 0px 15px;
@@ -734,7 +742,6 @@ transform-origin: left bottom;
   }
   .team .team-content .card{
     width: 100%;
-    color: #ffffff;
   }
   
   }
