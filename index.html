@@ -3,6 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="./main.js"></script>
   <title>My Website</title>
 </head>
 <body>
@@ -283,12 +285,27 @@
     <div class="container">
         <h2 class="title">Contact Me</h2>
         <div class="contact-content">
-            <form>
-               <input type="text" placeholder="Name"/>
-               <input type="text" placeholder="Email"/>
-               <input type="text" placeholder="Subject"/>
-               <textarea placeholder="Message"></textarea>
-               <button class="btn-light">Send Message</button>
+            <form action="https://formspree.io/f/broof716@gmail.com" method="post">
+              <label>
+                Name
+               <input type="text" />
+              </label>
+              <label>
+                Email
+               <input class="email" type="text" />
+              </label>
+              <label>
+                Subject
+               <input class="subject" type="text" />
+              </label>
+              <label>
+                Message
+               <textarea class="message"></textarea>
+              </label>
+              <div class="status">
+
+              </div>
+               <button type="submit" class="submit" class="btn-light">Send Message</button>
             </form>
         </div>
     </div>
