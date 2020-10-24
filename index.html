@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
   <script type="text/javascript"></script>
+  <script src="main.js"></script>
 
   <title>My Website</title>
 </head>
@@ -285,7 +286,7 @@
     <div class="container">
         <h2 class="title">Contact Me</h2>
         <div class="contact-content">
-          <form action="https://formspree.io/f/xleobzrp" method="POST">
+          <form action="https://formspree.io/f/xleobzrp" method="POST" id="my-form">
             <input id="name" name="name" type="text" placeholder="Name"/>
             <input id="email" name="email" type="text" placeholder="Email"/>
             <input id="subject" name="subject" type="text" placeholder="Subject"/>
@@ -293,6 +294,7 @@
             <button class="btn-light">Send Message</button>
           </form>
         </div>
+        <div id="status"></div>
     </div>
  </section>
   <!-- End Contact -->
