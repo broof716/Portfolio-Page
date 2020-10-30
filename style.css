@@ -437,7 +437,7 @@ h2.title::before{
 .team{
   float: left;
   width: 100%;
-  padding: 80px 0px;
+  padding: 60px 0px;
   background-color: #292929;
 }
 
@@ -449,7 +449,7 @@ h2.title::before{
 .team .team-content .card{
 width: 50%;
 float: left;
-padding: 15px;
+padding: 45px;
 }
 
 .team .team-content .card .box{
